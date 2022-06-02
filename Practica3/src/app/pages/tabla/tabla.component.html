@@ -1,0 +1,28 @@
+<nz-table #basicTable [nzData]="listOfData">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nombres</th>
+    <th>Apellido Paterno</th>
+    <th>Apellido Materno</th>
+    <th>Fecha de Nacimiento</th>
+    <th>Sexo</th>
+    <th>Acción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr >
+    <td>{{ id }}</td>
+    <td>{{ nombres }}</td>
+    <td>{{ ap}}</td>
+    <td>{{ am }}</td>
+    <td>{{ fdn }}</td>
+    <td>{{ sexo }}</td>
+    <td><a>Eliminar</a></td>
+  </tr>
+  </tbody>
+</nz-table>
+
+<nz-breadcrumb [nzAutoGenerate]="true">
+</nz-breadcrumb>
+

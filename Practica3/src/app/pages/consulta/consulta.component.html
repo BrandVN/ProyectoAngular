@@ -1,0 +1,23 @@
+<nz-table #basicTable [nzData]="listOfData">
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Año</th>
+    <th>Direccion</th>
+    <th>Opcion</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let registro of basicTable.data">
+    <td>{{ registro.nombre }}</td>
+    <td>{{ registro.edad }}</td>
+    <td>{{ registro.direccion }}</td>
+    <td><a>Eliminar</a>
+    </td>
+  </tr>
+  </tbody>
+</nz-table>
+
+<nz-breadcrumb [nzAutoGenerate]="true">
+</nz-breadcrumb>
+
